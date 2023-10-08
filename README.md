@@ -1,21 +1,19 @@
-# A Next.js Personal Website with a Native Authoring Experience<!-- omit in toc -->
+# Next.js and Sanity Website Starter kit
 
-This starter is a statically generated personal website that uses [Next.js][nextjs] for the frontend and [Sanity][sanity-homepage] to handle its content. It comes with a native Sanity Studio that offers features like real-time collaboration, instant side-by-side content previews, and intuitive editing.
+This starter is a statically generated website that uses [Next.js][nextjs] for the frontend and [Sanity][sanity-homepage] to handle its content. It comes with a native Sanity Studio that offers features like real-time collaboration, instant side-by-side content previews, and intuitive editing.
 
-The Studio connects to Sanity Content Lake, which gives you hosted content APIs with a flexible query language, on-demand image transformations, powerful patching, and more. You can use this starter to kick-start a personal website or learn these technologies.
+The Studio connects to Sanity Content Lake, which gives you hosted content APIs with a flexible query language, on-demand image transformations, powerful patching, and more. You can use this starter to kick-start website project at Sora Union.
 
 > **Note**
 >
 > This repo uses the `app-router`.
->
-> For a `pages-router` alternative, use [template-nextjs-personal-website][personal-website-pages].
 
-[![Deploy with Vercel](https://vercel.com/button)][vercel-deploy]
+[Deploy with Vercel][vercel-deploy]
 
 ## Features
 
 - A performant, static personal website with editable projects
-- A native and customizable authoring environment, accessible on `yourpersonalwebsite.com/studio`
+- A native and customizable authoring environment, accessible on `yourwebsite.com/studio`
 - Real-time and collaborative content editing with fine-grained revision history
 - Side-by-side instant content preview that works across your whole site
 - Support for block content and the most advanced custom fields capability in the industry
@@ -35,27 +33,27 @@ The Studio connects to Sanity Content Lake, which gives you hosted content APIs 
   - [Step 3. Run Next.js locally in development mode](#step-3-run-nextjs-locally-in-development-mode)
   - [Step 4. Deploy to production](#step-4-deploy-to-production)
 - [Questions and Answers](#questions-and-answers)
-  - [It doesn't work! Where can I get help?](#it-doesnt-work-where-can-i-get-help)
-  - [How can I remove the "Next steps" block from my personal site?](#how-can-i-remove-the-next-steps-block-from-my-personal-website)
+  - [It doesn&#39;t work! Where can I get help?](#it-doesnt-work-where-can-i-get-help)
+  - [How can I remove the &#34;Next steps&#34; block from my personal site?](#how-can-i-remove-the-next-steps-block-from-my-personal-website)
 - [Next steps](#next-steps)
 
 ## Project Overview
 
-| [Personal Website](https://template-nextjs-app-router-personal-website.sanity.build/)                                     | [Studio](https://template-nextjs-app-router-personal-website.sanity.build/studio)                                      |
-| ------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------- |
+| [Personal Website](https://template-nextjs-app-router-personal-website.sanity.build/)                                      | [Studio](https://template-nextjs-app-router-personal-website.sanity.build/studio)                                       |
+| ----------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------- |
 | ![Personal Website](https://user-images.githubusercontent.com/6951139/206395107-e58a796d-13a9-400a-94b6-31cb5df054ab.png) | ![Sanity Studio](https://user-images.githubusercontent.com/6951139/206395521-8a5f103d-4a0c-4da8-aff5-d2a1961fb2c0.png) |
 
 ### Important files and folders
 
-| File(s)                                     | Description                                             |
-| ------------------------------------------- | ------------------------------------------------------- |
-| `sanity.config.ts`                          | Config file for Sanity Studio                           |
-| `sanity.cli.ts`                             | Config file for Sanity CLI                              |
-| `/app/studio/[[...index]]/page.tsx`         | Where Sanity Studio is mounted                          |
-| `/app/api/revalidate/route.ts`              |  Serverless route for triggering ISR                    |
-| `/app/api/draft/route.ts`                   | Serverless route for triggering Draft mode              |
-| `/schemas`                                  | Where Sanity Studio gets its content types from         |
-| `/plugins`                                  | Where the advanced Sanity Studio customization is setup |
+| File(s)                                         | Description                                             |
+| ----------------------------------------------- | ------------------------------------------------------- |
+| `sanity.config.ts`                            | Config file for Sanity Studio                           |
+| `sanity.cli.ts`                               | Config file for Sanity CLI                              |
+| `/app/studio/[[...index]]/page.tsx`           | Where Sanity Studio is mounted                          |
+| `/app/api/revalidate/route.ts`                | Serverless route for triggering ISR                     |
+| `/app/api/draft/route.ts`                     | Serverless route for triggering Draft mode              |
+| `/schemas`                                    | Where Sanity Studio gets its content types from         |
+| `/plugins`                                    | Where the advanced Sanity Studio customization is setup |
 | `/lib/sanity.api.ts`,`/lib/sanity.image.ts` | Configuration for the Sanity Content Lake client        |
 
 ## Configuration
@@ -64,7 +62,7 @@ The Studio connects to Sanity Content Lake, which gives you hosted content APIs 
 
 Use the Deploy Button below. It will let you deploy the starter using [Vercel](https://vercel.com?utm_source=github&utm_medium=readme&utm_campaign=next-sanity-example) as well as connect it to your Sanity Content Lake using [the Sanity Vercel Integration][integration].
 
-[![Deploy with Vercel](https://vercel.com/button)][vercel-deploy]
+[Deploy with Vercel][vercel-deploy]
 
 ### Step 2. Set up the project locally
 
@@ -106,43 +104,14 @@ Alternatively, you can deploy without a `git` hosting provider using the Vercel 
 npx vercel --prod
 ```
 
-## Questions and Answers
-
-### It doesn't work! Where can I get help?
-
-In case of any issues or questions, you can post:
-
-- [GitHub Discussions for Next.js][vercel-github]
-- [Sanity's GitHub Discussions][sanity-github]
-- [Sanity's Community Slack][sanity-community]
-
-### How can I remove the "Next steps" block from my personal website?
+### How can I remove the "Next steps" block from the starter kit website?
 
 You can remove it by deleting the `IntroTemplate` component in `/app/(personal)/layout.tsx`.
 
 ## Next steps
 
-- [Join our Slack community to ask questions and get help][sanity-community]
 - [How to edit my content structure?][sanity-schema-types]
 - [How to query content?][sanity-groq]
 - [What is content modelling?][sanity-content-modelling]
 
-[vercel-deploy]: https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fsanity-io%2Fsanity-template-nextjs-app-router-personal-website&project-name=nextjs-personal-website&repository-name=nextjs-personal-website&demo-title=Personal+Website+with+Built-in+Content+Editing&demo-description=A+Sanity-powered+personal+website+with+built-in+content+editing+and+instant+previews.+Uses+App+Router.&demo-url=https%3A%2F%2Ftemplate-nextjs-app-router-personal-website.sanity.build%2F&demo-image=https%3A%2F%2Fuser-images.githubusercontent.com%2F6951139%2F206395107-e58a796d-13a9-400a-94b6-31cb5df054ab.png&integration-ids=oac_hb2LITYajhRQ0i4QznmKH7gx&external-id=nextjs%3Btemplate%3Dsanity-template-nextjs-app-router-personal-website
-[integration]: https://www.sanity.io/docs/vercel-integration?utm_source=github.com&utm_medium=referral&utm_campaign=nextjs-v3vercelstarter
-[`.env.local.example`]: .env.local.example
-[nextjs]: https://github.com/vercel/next.js
-[sanity-create]: https://www.sanity.io/get-started/create-project?utm_source=github.com&utm_medium=referral&utm_campaign=nextjs-v3vercelstarter
-[sanity-deployment]: https://www.sanity.io/docs/deployment?utm_source=github.com&utm_medium=referral&utm_campaign=nextjs-v3vercelstarter
-[sanity-homepage]: https://www.sanity.io?utm_source=github.com&utm_medium=referral&utm_campaign=nextjs-v3vercelstarter
-[sanity-community]: https://slack.sanity.io/
-[sanity-schema-types]: https://www.sanity.io/docs/schema-types?utm_source=github.com&utm_medium=referral&utm_campaign=nextjs-v3vercelstarter
-[sanity-github]: https://github.com/sanity-io/sanity/discussions
-[sanity-groq]: https://www.sanity.io/docs/groq?utm_source=github.com&utm_medium=referral&utm_campaign=nextjs-v3vercelstarter
-[sanity-content-modelling]: https://www.sanity.io/docs/content-modelling?utm_source=github.com&utm_medium=referral&utm_campaign=nextjs-v3vercelstarter
-[sanity-webhooks]: https://www.sanity.io/docs/webhooks?utm_source=github.com&utm_medium=referral&utm_campaign=nextjs-v3vercelstarter
-[localhost-3000]: http://localhost:3000
-[localhost-3000-studio]: http://localhost:3000/studio
-[vercel]: https://vercel.com
-[vercel-github]: https://github.com/vercel/next.js/discussions
-[personal-website-pages]: https://github.com/sanity-io/template-nextjs-personal-website
 [app-dir]: https://beta.nextjs.org/docs/routing/fundamentals#the-app-directory
