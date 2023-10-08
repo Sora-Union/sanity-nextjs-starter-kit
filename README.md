@@ -32,11 +32,6 @@ The Studio connects to Sanity Content Lake, which gives you hosted content APIs 
   - [Step 2. Set up the project locally](#step-2-set-up-the-project-locally)
   - [Step 3. Run Next.js locally in development mode](#step-3-run-nextjs-locally-in-development-mode)
   - [Step 4. Deploy to production](#step-4-deploy-to-production)
-- [Questions and Answers](#questions-and-answers)
-  - [It doesn&#39;t work! Where can I get help?](#it-doesnt-work-where-can-i-get-help)
-  - [How can I remove the &#34;Next steps&#34; block from my personal site?](#how-can-i-remove-the-next-steps-block-from-my-personal-website)
-- [Next steps](#next-steps)
-
 ## Project Overview
 
 | [Personal Website](https://template-nextjs-app-router-personal-website.sanity.build/)                                      | [Studio](https://template-nextjs-app-router-personal-website.sanity.build/studio)                                       |
